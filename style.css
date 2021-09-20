@@ -1,0 +1,42 @@
+.Intitulé{
+    width: 500px;
+    position : relative;
+    top: -1255px; left: 300px;
+    background-color:aquamarine;
+    text-align: center;
+    font-family: arial;
+
+       
+}
+
+img{
+	width: 100px;
+	height: 100px;
+
+}
+
+.Gauche{
+
+    width: 250px;
+    height: 610px;
+    position: relative;
+    top: 0px; left: 0px;
+    background-color: aquamarine;
+    font-family: georgia;   
+}
+
+#deux{
+
+    position: relative;
+   top: -20px; left: 0px;
+}
+
+.Droite{
+
+    width: 500px;
+    position: relative;
+    top: -1255px; left: 300px;
+    font-family: georgia;
+
+
+}
