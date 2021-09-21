@@ -8,10 +8,36 @@
     </head>
     
     <body>
+        <nav class="menu">
+            <ol>
+                <li class="menu"><a href="#">Facebook</a></li>
+                <li class="menu"><a href="#">Instagram</a></li>
+                <li class="menu"><a href="#">Linkedin</a></li>
+            </ol>
+        </nav>
+
+        <form method="post" class="formulaire">
+ 
+            <fieldset>
+                <legend>Vos coordonnées</legend> 
+         
+                <label for="nom">Votre nom ?</label>
+                <input type="text" name="nom" id="nom" />
+          
+                <label for="email">Votre e-mail ?</label>
+                <input type="email" name="email" id="email" required/>
+            </fieldset>
+
+            <fieldset>
+                <legend>Un avis afin d'améliorer mon CV?</legend>
+                <textarea name="ameliorer" id="ameliorer"></textarea>
+            </fieldset>
+        </form>
+
+
         <div class="Gauche" id="un">
 
-            
-            
+
             <h2>LUCAS LESCOT</h2>
             <p><a href="photocv.jpg"><img src="photocv.jpg" alt="Photo CV" /></a></p>
             <ul>
@@ -123,8 +149,6 @@
        </div>
 
     </body>
-
-
 
 
 
