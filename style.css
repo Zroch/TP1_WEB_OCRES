@@ -1,88 +1,186 @@
-nav {
-    border-bottom: 1px solid black;
+*{
+    margin:0;
+    padding:0;
+}
+
+header{
+
+    background-color: #055052;
+    height: 200px;
+    color:white;
     text-align: center;
-    width: 1000px;
+    font-family: 'Roboto', sans-serif;
+}
+
+header h1{
+    font-size: 110px;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 2px black;
+}
+
+header h2{
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+nav{
+    height: 40px;
+    background-color: #53B8BB;
+    padding-top: auto;
+    text-align: center;
+    box-shadow: 1px 1px 3px black;
+    position: sticky;
+    top : 0;
+}
+
+nav li{
+    display: inline-block;
+    padding: 10px 30px 0 0;
+}
+
+nav a{
+    text-decoration: none;
+    background-color: #F3F2C9;
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+nav a:hover{
+    color:black;
+    box-shadow: 2px 2px 2px;
+}
+
+.wrapper{
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+    width : 90%;
+    max-width: 1000px;
+    margin: auto;
     
 }
 
-.formulaire{
-
-    position : relative;
-    left : 900px; top:200px;
-    width: 300px;
-    animation: anim 5s infinite;
+.wrapper aside{
+    background-color: #53B8BB;
+    height: 1200px;
 
 }
-.menu ol {
-    list-style-type: none;
-    padding-left: 0;
+
+.wrapper aside img{
+    width:200px;
+    border-radius: 10px 10px 10px 10px;
+    padding-left: 10%;
+    padding-bottom: 10px;
 }
 
-.menu {
-    display: inline-block;
-}
-
-.menu a::after {
-    display: inline-block;
-    color: #000;
-    content: '>';
-    font-size: 80%;
-    font-weight: bold;
-    padding: 0 3px;
-}
-
-.Intitulé{
-    width: 500px;
-    position : relative;
-    top: -1400px; left: 300px;
-    background-color:aquamarine;
+.title{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
     text-align: center;
-    font-family: arial;
-
-       
+    background-color: #055052;
+    box-shadow: 2px 2px 5px #055052;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
 }
-
-img{
-	width: 100px;
-	height: 100px;
-
-}
-
-.Gauche{
-
-    width: 250px;
-    height: 610px;
-    position: relative;
-    top: -135px; left: 0px;
-    background-color: aquamarine;
-    font-family: georgia;   
+.wrapper section{
+    padding: 5px;
 }
 
 #deux{
-
-    position: relative;
-   top: -155px; left: 0px;
+    margin-top: 300px;
 }
 
-.Droite{
-
-    width: 500px;
-    position: relative;
-    top: -1400px; left: 300px;
-    font-family: georgia;
-
+.wrapper aside ul{
+    margin-left: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
 
 }
+.wrapper aside p{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+.presentation{
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding: 40px;
+    text-align: center;
+    background-color: #53B8BB;
+    box-shadow: 2px 2px 5px #53B8BB;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
 
-@keyframes anim {
-    from, to { color: hsl(324, 70%, 45%); }
-    10%      { color: hsl(360, 65%, 45%); }
-    20%      { color: hsl( 36, 80%, 45%); }
-    30%      { color: hsl( 72, 75%, 35%); }
-    40%      { color: hsl(108, 65%, 35%); }
-    50%      { color: hsl(144, 75%, 35%); }
-    60%      { color: hsl(180, 75%, 35%); }
-    70%      { color: hsl(216, 60%, 45%); }
-    80%      { color: hsl(252, 65%, 50%); }
-    90%      { color: hsl(288, 60%, 40%); }
+}
+.wrapper section ul{
+    list-style-type: none;
+    margin-left: 100px;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+.bold{
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+audio{
+    padding: 20px;
+}
+
+.anim{
+        margin-left: 50px;
+        padding:300px;
+        background-color: coral;
+        animation: square-to-circle 2s infinite alternate;
+
+        text-align: center;
+}
+
+@keyframes square-to-circle {
+    0% {
+    border-radius:0 0 0 0;
+    background:coral;
+    }
+    25% {
+    border-radius:10% 10% 10% 10%;
+    background:darksalmon;
+    }
+    50% {
+    border-radius:25% 25% 25% 25%;
+    background:indianred;
+    }
+    75% {
+    border-radius:40% 40% 40% 40%;
+    background:lightcoral;
+    }
+    100% {
+    border-radius:50%;
+    background:darksalmon;
+    }
+    }
+
+footer{
+    background-color: #055052;
+    height: 30px;
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+    box-shadow: 1px 1px 3px black;
+}
+
+footer p{
+    
+    position: relative;
+    letter-spacing: 3px;
+    font-family: 'Roboto', sans-serif;
 }
