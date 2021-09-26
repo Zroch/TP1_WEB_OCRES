@@ -68,7 +68,7 @@ nav a:hover{
 
 .wrapper aside{
     background-color: #53B8BB;
-    height: 1200px;
+    height: 1400px;
 
 }
 
@@ -94,11 +94,11 @@ nav a:hover{
 }
 
 #deux{
-    margin-top: 300px;
+    margin-top: 322px;
 }
 
 .wrapper aside ul{
-    margin-left: 20px;
+    margin-left: 40px;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
 
@@ -131,6 +131,44 @@ nav a:hover{
     margin-left: 25px;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+.spans p{
+    text-align: left;
+    padding-left: 100px;
+    margin-top: 5px;
+}
+.spans span{
+    font-weight: bold;
+}
+
+progress{
+    width: 20%;
+    height: 20px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+}
+
+.contact{
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 3px;
+    margin-left: 15px;
+}
+
+input, textarea{
+    display: block;
+    width: 50%;
+    height: 25px;
+    margin-left: 50px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+textarea{
+    height: 200px;
+    font-family: 'Roboto', sans-serif;
 }
 
 audio{
